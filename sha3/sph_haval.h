@@ -64,6 +64,10 @@
 #include <stddef.h>
 #include "sph_types.h"
 
+#ifdef __cplusplus
+extern "C"{
+#endif
+
 /**
 * Output size (in bits) for HAVAL-128/3.
 */
