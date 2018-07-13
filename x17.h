@@ -1,10 +1,16 @@
 #ifndef X17_H
 #define X17_H
 
-#include "miner.h"
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-extern int x17_test(unsigned char *pdata, const unsigned char *ptarget,
-                    uint32_t nonce);
-extern void x17_regenhash(struct work *work);
+#include <stdint.h>
 
-#endif /* X17_H */
+void x17_hash(const char* input, char* output, uint32_t len);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif
